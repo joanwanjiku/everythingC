@@ -34,32 +34,50 @@ int main(void) {
     
 //    bubble sort
     int numbersArr[5];
-            int i, aux;
-            int swapped;
+    int i, aux;
+    int swapped;
             
             /* ask the user to enter 5 values */
-            for(i = 0; i < 5; i++) {
-                printf("\nEnter value #%i\n",i + 1);
-                scanf("%d",&numbersArr[i]);
-            }
+    for(i = 0; i < 5; i++) {
+        printf("\nEnter value #%i\n",i + 1);
+        scanf("%d",&numbersArr[i]);
+    }
             
             /* sort them */
-            do {
-                swapped = 0;
-                for(i = 0; i < 4; i++) {
-                    if(numbersArr[i] > numbersArr[i + 1]) {
-                        swapped = 1;
-                        aux = numbersArr[i];
-                        numbersArr[i] = numbersArr[i + 1];
-                        numbersArr[i + 1] = aux;
-                    }
-                }
-            } while(swapped);
+    do {
+        swapped = 0;
+        for(i = 0; i < 4; i++) {
+            if(numbersArr[i] > numbersArr[i + 1]) {
+                swapped = 1;
+                aux = numbersArr[i];
+                numbersArr[i] = numbersArr[i + 1];
+                numbersArr[i + 1] = aux;
+            }
+        }
+    } while(swapped);
             
             /* print results */
-            printf("\nSorted array: ");
-            for(i = 0; i < 5; i++)
-                printf("%d ",numbersArr[i]);
+    printf("\nSorted array: ");
+        for(i = 0; i < 5; i++)
+            printf("%d ",numbersArr[i]);
             
-            printf("\n");
+        printf("\n");
+//    bubble sort reverse
+    float numbersToReverse[10] = {5.6, 4.3, 6.2, 6.4, 7.3, 2.3, 8.3, 9.2, 0.1, 1.9};
+
+
+    for (char i =0; i < 9; i++){
+        for (char j = 0; j < 9 - i; j++) {
+            if (numbersToReverse[j] < numbersToReverse[j +1]){
+                float currNum = numbersToReverse[j];
+                numbersToReverse[j] = numbersToReverse[j + 1];
+                numbersToReverse[j +1] = currNum;
+            }
+        }
+            
+        for(char k =0; k < 10; k++){
+            printf("%.2f ", numbersToReverse[k]);
+        }
+        printf("\n");
+    }
 }
