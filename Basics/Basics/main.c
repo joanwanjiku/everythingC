@@ -9,7 +9,7 @@
 #include <math.h>
 
 
-int main(int argc, const char * argv[]) {
+int mainBasics(int argc, const char * argv[]) {
     
     // insert code here...
     float value, sqrRt;
@@ -66,7 +66,7 @@ int main(int argc, const char * argv[]) {
     int daysInMonthLeap[] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int daysInMonth[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    int daysOfTheYear;
+    int daysOfTheYear = 0;
     
     
     /* because you may not know the else instruction yet,
@@ -94,5 +94,7 @@ int main(int argc, const char * argv[]) {
             printf("%d is a leap year", year);
         }
     /* your code */
+    
+    
     return 0;
 }

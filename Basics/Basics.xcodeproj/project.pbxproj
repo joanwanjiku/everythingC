@@ -23,6 +23,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B80394642D6D0D1900323D03 /* Loops */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Loops;
+			sourceTree = "<group>";
+		};
+		B8D250392D80BEDE00CC78BD /* Arrays */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Arrays;
+			sourceTree = "<group>";
+		};
 		B8F4DC3B2D63E30F0006DA02 /* Basics */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Basics;
@@ -44,6 +54,8 @@
 		B8F4DC302D63E30F0006DA02 = {
 			isa = PBXGroup;
 			children = (
+				B8D250392D80BEDE00CC78BD /* Arrays */,
+				B80394642D6D0D1900323D03 /* Loops */,
 				B8F4DC3B2D63E30F0006DA02 /* Basics */,
 				B8F4DC3A2D63E30F0006DA02 /* Products */,
 			);
@@ -73,6 +85,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				B80394642D6D0D1900323D03 /* Loops */,
+				B8D250392D80BEDE00CC78BD /* Arrays */,
 				B8F4DC3B2D63E30F0006DA02 /* Basics */,
 			);
 			name = Basics;
